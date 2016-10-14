@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=width.device, initial-scale=1.0">
+    <title>Calcul du carré d'un nombre</title>
+    <link rel="stylesheet" href="styleexo1.css">
+</head>
+<body>
+    <h1>TP1 DHTML: Calculer le carré d'un nombre</h1>
+    <form id="calcul">
+            <div class="row">
+                <label>Entrer un nombre: </label>
+                <input type="text" value="" placeholder="0" id="nbre">
+                <input type="button" value="Calculer" id="calc">
+                <p>le carré de <span id="valeur"></span> est <span id="result"></span></p>
+
+            </div>
+
+    </form>
+    <script>
+        var form=document.getElementById("calcul");
+        form.elements.calc.onclick=CarreNbre;
+
+            function CarreNbre() {
+               var  form=this.form,
+                       nombre=Number(form.elements.nbre.value),
+                       resultat;
+                resultat=nombre*nombre;
+                document.getElementById("valeur").innerHTML=nombre;
+                document.getElementById("result").innerHTML=resultat;
+                appel.elements.valeur=nombre;
+                appel.elements.result=resultat;
+
+
+
+            }
+    </script>
+
+</body>
+</html>

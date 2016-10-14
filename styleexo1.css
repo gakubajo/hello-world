@@ -1,0 +1,27 @@
+body{
+    margin: 15px  20% 0 20%;
+    border: 1px solid black;
+    padding-left: 20px;
+}
+h1{
+    border-bottom: 1px solid blue;
+}
+div{
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 5em;
+    top: auto;
+    padding: 1em 5em 5em 1em;
+    position: relative;
+    background-color: black;
+    color: white;
+
+}
+#result{
+    background-color: green;
+    color: black;
+}
+#valeur{
+    background-color: red;
+    color: black;
+}
